@@ -2,7 +2,7 @@
   "name": "lobe-web-sample",
   "version": "0.2.0",
   "private": true,
-  "homepage": "http://SampaSinha.github.io/react_passport.git",
+  "homepage": "https://sampasinha.github.io/test_app/",
   "dependencies": {
     "@tensorflow/tfjs": "^3.1.0",
     "@testing-library/jest-dom": "^5.11.4",
@@ -26,7 +26,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "svgr": "svgr -d src/Icons/ assets/svg/",
-    "predeploy": "npm run build",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
