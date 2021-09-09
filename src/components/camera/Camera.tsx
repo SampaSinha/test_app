@@ -35,6 +35,19 @@ function Camera({ predictCanvas, predictions }: CameraProps) {
     
                 
 
+    
+    return (
+        <>
+          {devices.map((device, key) => (
+              <div>
+                <Webcam audio={false} videoConstraints={{ deviceId: device.deviceId }} />
+                {device.label || `Device ${key + 1}`}
+              </div>
+    
+            ))}
+        </>
+      );
+    
     // function to grab the current frame drawn on canvas from the webcam
     const getCanvas: () => Promise<HTMLCanvasElement | undefined> = useCallback(async () => {
         let newImage;
